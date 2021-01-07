@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+
+<body>
+    <script>
+        const teste = async () => {
+            const url = 'http://localhost:3050/api/v1/news'
+            const data = await fetch(url)
+            // console.log(data)
+            const res = await data.json()
+            console.log(res)
+        }
+        teste()
+    </script>
+</body>
+
+</html>
